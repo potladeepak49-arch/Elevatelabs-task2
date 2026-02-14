@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #cfd8e3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background: #f4f6f9;
+    width: 600px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+h1 {
+    text-align: center;
+    color: #2f5ea7;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #bfc9d9;
+    background: #dfe6ef;
+    outline: none;
+}
+
+button {
+    width: 50px;
+    border: none;
+    border-radius: 8px;
+    background: #2f5ea7;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.empty {
+    text-align: center;
+    color: #6c8dbf;
+    margin-top: 40px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.task-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.task.completed span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.delete-btn {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #f8d7da;
+    border: none;
+    color: red;
+    font-size: 18px;
+    display: none;
+    cursor: pointer;
+}
+
+.task:hover .delete-btn {
+    display: block;
+}
